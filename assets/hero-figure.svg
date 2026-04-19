@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#eeeef2" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1a20"/>
+      <stop offset="1" stop-color="#33333c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <rect width="1200" height="600" fill="url(#grid)"/>
+
+  <!-- axes -->
+  <g stroke="#c7c7cd" stroke-width="1">
+    <line x1="120" y1="80" x2="120" y2="520"/>
+    <line x1="120" y1="520" x2="1100" y2="520"/>
+  </g>
+  <g fill="#9b9ba4" font-family="Inter, sans-serif" font-size="12">
+    <text x="98" y="110">kN</text>
+    <text x="1080" y="540">m</text>
+  </g>
+
+  <!-- ground -->
+  <g stroke="#c7c7cd" stroke-width="1">
+    <line x1="180" y1="520" x2="200" y2="540"/>
+    <line x1="220" y1="520" x2="240" y2="540"/>
+    <line x1="260" y1="520" x2="280" y2="540"/>
+    <line x1="900" y1="520" x2="920" y2="540"/>
+    <line x1="940" y1="520" x2="960" y2="540"/>
+    <line x1="980" y1="520" x2="1000" y2="540"/>
+  </g>
+
+  <!-- supports -->
+  <polygon points="220,520 200,560 240,560" fill="#1a1a20"/>
+  <polygon points="960,520 940,560 980,560" fill="#1a1a20"/>
+  <circle cx="960" cy="565" r="6" fill="#ffffff" stroke="#1a1a20" stroke-width="2"/>
+
+  <!-- columns -->
+  <rect x="210" y="300" width="20" height="220" fill="url(#beamGrad)"/>
+  <rect x="950" y="300" width="20" height="220" fill="url(#beamGrad)"/>
+
+  <!-- beam -->
+  <rect x="210" y="280" width="760" height="24" fill="url(#beamGrad)"/>
+
+  <!-- distributed load arrows -->
+  <g stroke="#C8102E" stroke-width="2" fill="#C8102E">
+    <g>
+      <line x1="260" y1="200" x2="260" y2="270"/>
+      <polygon points="260,282 254,268 266,268"/>
+    </g>
+    <g>
+      <line x1="340" y1="200" x2="340" y2="270"/>
+      <polygon points="340,282 334,268 346,268"/>
+    </g>
+    <g>
+      <line x1="420" y1="200" x2="420" y2="270"/>
+      <polygon points="420,282 414,268 426,268"/>
+    </g>
+    <g>
+      <line x1="500" y1="200" x2="500" y2="270"/>
+      <polygon points="500,282 494,268 506,268"/>
+    </g>
+    <g>
+      <line x1="580" y1="200" x2="580" y2="270"/>
+      <polygon points="580,282 574,268 586,268"/>
+    </g>
+    <g>
+      <line x1="660" y1="200" x2="660" y2="270"/>
+      <polygon points="660,282 654,268 666,268"/>
+    </g>
+    <g>
+      <line x1="740" y1="200" x2="740" y2="270"/>
+      <polygon points="740,282 734,268 746,268"/>
+    </g>
+    <g>
+      <line x1="820" y1="200" x2="820" y2="270"/>
+      <polygon points="820,282 814,268 826,268"/>
+    </g>
+    <g>
+      <line x1="900" y1="200" x2="900" y2="270"/>
+      <polygon points="900,282 894,268 906,268"/>
+    </g>
+  </g>
+  <line x1="240" y1="200" x2="920" y2="200" stroke="#C8102E" stroke-width="2"/>
+
+  <text x="540" y="180" text-anchor="middle" fill="#C8102E" font-family="Inter, sans-serif" font-size="14" font-weight="600">w = 12.5 kN/m</text>
+
+  <!-- bending moment curve -->
+  <path d="M 220 420 Q 590 560, 960 420" stroke="#C8102E" stroke-width="2.5" fill="none" stroke-dasharray="6 5"/>
+  <text x="590" y="560" text-anchor="middle" fill="#6a6a72" font-family="Inter, sans-serif" font-size="13">Bending moment diagram</text>
+
+  <!-- labels -->
+  <text x="220" y="270" fill="#1a1a20" font-family="Inter, sans-serif" font-size="12" font-weight="600">A</text>
+  <text x="958" y="270" fill="#1a1a20" font-family="Inter, sans-serif" font-size="12" font-weight="600">B</text>
+
+  <!-- side callouts -->
+  <g font-family="Inter, sans-serif" fill="#1a1a20">
+    <rect x="980" y="100" width="180" height="80" rx="10" fill="#ffffff" stroke="#e7e7ea"/>
+    <text x="998" y="124" font-size="12" fill="#9b9ba4">Deflection</text>
+    <text x="998" y="148" font-size="18" font-weight="700">L / 560</text>
+    <text x="998" y="168" font-size="11" fill="#9b9ba4">within allowable</text>
+
+    <rect x="40" y="100" width="170" height="80" rx="10" fill="#ffffff" stroke="#e7e7ea"/>
+    <text x="58" y="124" font-size="12" fill="#9b9ba4">Max moment</text>
+    <text x="58" y="148" font-size="18" font-weight="700" fill="#C8102E">87.4 kN&#183;m</text>
+    <text x="58" y="168" font-size="11" fill="#9b9ba4">at mid-span</text>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none">
+  <rect width="600" height="420" rx="14" fill="#0f0f14"/>
+  <g font-family="Inter, sans-serif">
+    <rect x="30" y="30" width="540" height="60" rx="10" fill="#1a1a20"/>
+    <circle cx="60" cy="60" r="16" fill="#C8102E"/>
+    <text x="86" y="54" fill="#ffffff" font-size="14" font-weight="700">Discovery call scheduled</text>
+    <text x="86" y="74" fill="#9b9ba4" font-size="12">Tue &#183; 10:30 AM &#183; 20 min</text>
+
+    <rect x="30" y="110" width="540" height="220" rx="10" fill="#1a1a20"/>
+    <text x="50" y="140" fill="#9b9ba4" font-size="12">Project brief</text>
+    <text x="50" y="170" fill="#ffffff" font-size="18" font-weight="700">Cedar Ridge  4-story custom residence</text>
+    <g fill="#9b9ba4" font-size="12">
+      <text x="50" y="200">Location</text>
+      <text x="50" y="250">Scope</text>
+      <text x="50" y="300">Target permit</text>
+    </g>
+    <g fill="#ffffff" font-size="13">
+      <text x="170" y="200">Lake Tahoe, CA</text>
+      <text x="170" y="250">Foundation, framing, seismic</text>
+      <text x="170" y="300">March 2026</text>
+    </g>
+
+    <rect x="30" y="350" width="220" height="40" rx="8" fill="#C8102E"/>
+    <text x="70" y="375" fill="#ffffff" font-size="13" font-weight="600">Send proposal </text>
+    <rect x="260" y="350" width="150" height="40" rx="8" fill="#1a1a20" stroke="#2a2a32"/>
+    <text x="290" y="375" fill="#ffffff" font-size="13" font-weight="600">Edit brief</text>
+  </g>
+</svg>

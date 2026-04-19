@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde8ec"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#sky1)"/>
+  <!-- hillside -->
+  <path d="M0 360 L180 300 L340 340 L600 280 L600 450 L0 450 Z" fill="#f0d9dd"/>
+  <!-- house -->
+  <g>
+    <rect x="180" y="180" width="240" height="160" fill="#1a1a20"/>
+    <rect x="200" y="210" width="60" height="50" fill="#C8102E"/>
+    <rect x="280" y="210" width="120" height="50" fill="#2a2a32"/>
+    <rect x="200" y="280" width="200" height="50" fill="#2a2a32"/>
+    <polygon points="180,180 300,120 420,180" fill="#C8102E"/>
+    <rect x="300" y="280" width="40" height="60" fill="#C8102E"/>
+  </g>
+  <!-- ground line -->
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#d0d0d7" stroke-width="1" stroke-dasharray="4 4"/>
+</svg>

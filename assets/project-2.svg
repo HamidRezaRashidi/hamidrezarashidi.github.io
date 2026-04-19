@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5f5f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#sky2)"/>
+  <!-- city silhouettes -->
+  <g fill="#e7e7ea">
+    <rect x="20" y="240" width="60" height="200"/>
+    <rect x="90" y="200" width="70" height="240"/>
+    <rect x="470" y="220" width="60" height="220"/>
+    <rect x="540" y="260" width="50" height="180"/>
+  </g>
+  <!-- featured building -->
+  <g>
+    <rect x="210" y="80" width="180" height="360" fill="#1a1a20"/>
+    <!-- windows grid -->
+    <g fill="#C8102E" opacity="0.9">
+      <rect x="225" y="100" width="24" height="30"/>
+      <rect x="260" y="100" width="24" height="30"/>
+      <rect x="295" y="100" width="24" height="30"/>
+      <rect x="330" y="100" width="24" height="30"/>
+      <rect x="365" y="100" width="14" height="30"/>
+    </g>
+    <g fill="#3a3a44">
+      <rect x="225" y="145" width="24" height="30"/><rect x="260" y="145" width="24" height="30"/><rect x="295" y="145" width="24" height="30"/><rect x="330" y="145" width="24" height="30"/><rect x="365" y="145" width="14" height="30"/>
+      <rect x="225" y="190" width="24" height="30"/><rect x="260" y="190" width="24" height="30"/><rect x="295" y="190" width="24" height="30"/><rect x="330" y="190" width="24" height="30"/><rect x="365" y="190" width="14" height="30"/>
+      <rect x="225" y="235" width="24" height="30"/><rect x="260" y="235" width="24" height="30"/><rect x="295" y="235" width="24" height="30"/><rect x="330" y="235" width="24" height="30"/><rect x="365" y="235" width="14" height="30"/>
+      <rect x="225" y="280" width="24" height="30"/><rect x="260" y="280" width="24" height="30"/><rect x="295" y="280" width="24" height="30"/><rect x="330" y="280" width="24" height="30"/><rect x="365" y="280" width="14" height="30"/>
+      <rect x="225" y="325" width="24" height="30"/><rect x="260" y="325" width="24" height="30"/><rect x="295" y="325" width="24" height="30"/><rect x="330" y="325" width="24" height="30"/><rect x="365" y="325" width="14" height="30"/>
+    </g>
+    <!-- podium -->
+    <rect x="180" y="380" width="240" height="60" fill="#2a2a32"/>
+  </g>
+  <line x1="0" y1="440" x2="600" y2="440" stroke="#d0d0d7"/>
+</svg>
